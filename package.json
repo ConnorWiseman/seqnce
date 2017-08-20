@@ -1,0 +1,38 @@
+{
+  "name": "seqnce",
+  "version": "0.0.0",
+  "description": "Asynchronous, callback-based Array mapping.",
+  "author": "ConnorWiseman",
+  "homepage": "https://github.com/ConnorWiseman/seqnce#readme",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorWiseman/seqnce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConnorWiseman/seqnce/issues"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "coverage": "codecov",
+    "lint": "eslint ./lib",
+    "test": "cross-env NODE_ENV=test nyc mocha ./test"
+  },
+  "engines": {
+    "node": ">=4.8.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "codecov": "^2.3.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.4.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "sinon": "^3.2.1",
+    "sinon-chai": "^2.13.0"
+  }
+}
