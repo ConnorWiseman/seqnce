@@ -7,10 +7,9 @@
 const chai           = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 const sinon          = require('sinon');
-const sinonChai      = require('sinon-chai');
-chai.should();
+
+const should = chai.should();
 chai.use(chaiAsPromised);
-chai.use(sinonChai);
 
 
 const sequence = require('../lib/');
@@ -42,7 +41,7 @@ describe('sequence', function() {
     });
 
     sequence(arr, fnStub, function(results) {
-      fnStub.callCount.should.equal(arr.length);
+      should.equal(fnStub.callCount, arr.length);
       done();
     });
   });
