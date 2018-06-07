@@ -1,6 +1,6 @@
 {
   "name": "seqnce",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Asynchronous, callback-based Array mapping.",
   "author": "ConnorWiseman",
   "homepage": "https://github.com/ConnorWiseman/seqnce#readme",
